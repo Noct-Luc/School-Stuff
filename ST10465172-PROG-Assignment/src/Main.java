@@ -11,7 +11,7 @@ public class Main {
 
         System.out.println("LATEST SERIES - 2025");
         System.out.println("**************");
-        System.out.println("Enter (i) to launch the menu or any other key to exit:");
+        System.out.println("Enter (1) to launch the menu or any other key to exit:");
         choice = Integer.parseInt(scanner.nextLine());
 
         while (running == true) {
@@ -36,7 +36,7 @@ public class Main {
 
                 case 1: //not done
                     System.out.println("Capturing new series" ) ;
-                    option = Integer.parseInt(scanner.nextLine());
+                    Series. captureSeries();
                     break;
 
                 case 2: //not done
