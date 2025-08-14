@@ -1,11 +1,11 @@
 public abstract class Fine implements iFine {
 
     public String personName;
-    public static int personSpeed;
+    public String personSpeed;
 
     public Fine(String personName, String personSpeed){
         this.personName=personName;
-        this.personSpeed= Integer.parseInt(personSpeed);
+        this.personSpeed=personSpeed;
     }
 
     protected Fine() {
@@ -19,3 +19,4 @@ public abstract class Fine implements iFine {
         return String.valueOf(personSpeed);
     }
 }
+
