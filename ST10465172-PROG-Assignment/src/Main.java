@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,8 +7,6 @@ public class Main {
         boolean running = true;
         int choice;
         int option = 0;
-
-
 
         System.out.println("LATEST SERIES - 2025");
         System.out.println("**************");
@@ -18,7 +17,7 @@ public class Main {
 
             if (choice == 1) {
                 System.out.println("Please select one of the following menu options (1-6)");
-                System.out.println("1. Capture new series  (development in progress)");
+                System.out.println("1. Capture new series");
                 System.out.println("2. Search for a series (development in progress)");
                 System.out.println("3. Update age restriction");
                 System.out.println("4. Delete a series (development in progress)");
@@ -34,18 +33,18 @@ public class Main {
 
             switch (option) {
 
-                case 1: //not done
+                case 1: // done
                     System.out.println("Capturing new series" ) ;
                     Series. captureSeries();
                     break;
 
-                case 2: //not done
+                case 2: //bugs found not done
                     System.out.println("Searching for a series ");
-                    option = Integer.parseInt(scanner.nextLine());
+                    Series.searchSeries();
                     break;
 
                 case 3: //done
-                    SeriesModel.AgeRestriction();
+                    Series.AgeRestriction();
                     break;
 
                 case 4: //not done
@@ -54,9 +53,9 @@ public class Main {
                     break;
 
 
-                case 5: //not done
+                case 5: //done
                     System.out.println("Print Series report");
-                    option = Integer.parseInt(scanner.nextLine());
+                    Series.displaySeries();
                     break;
 
                 case 6: //done
